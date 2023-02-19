@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useEffect } from "react";
+import ViewportProvider from "./viewport";
+import { Route, Routes } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import HomeScreen from "./pages/home";
+import Navbar from "./components/nav/Navbar";
+import AboutScreen from "./pages/about";
+import ContactScreen from "./pages/contact";
+import InfluencerScreen from "./pages/influencers";
+import PageNotFound from "./PageNotFound";
+import Aos from "aos";
+import Faq from "./pages/faq";
 
-function App() {
+const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    // const unsubscribe = onAuthStateChanged(auth, async (user) => {
+    //   if (user) {
+    //     const idToken = await user.getIdTokenResult();
+    //     if (await checkPhoneNumber(user.phoneNumber.slice(3))) {
+    //       dispatch(getAsyncUser(idToken.token));
+    //     } else {
+    //       dispatch(noUser());
+    //       message.error("Server Error.");
+    //     }
+    //   } else {
+    //     dispatch(noUser());
+    //     navigate("/login");
+    //   }
+    // });
+    // return () => unsubscribe();
+    Aos.init();
+  }, [dispatch]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ViewportProvider>
+      <div className="flexCenter" style={{ width: "100%" }}>
+        <Navbar />
+      </div>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/about" element={<AboutScreen />} />
+        <Route path="/contact" element={<ContactScreen />} />
+        <Route path="/influencer" element={<InfluencerScreen />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </ViewportProvider>
   );
-}
+};
 
 export default App;

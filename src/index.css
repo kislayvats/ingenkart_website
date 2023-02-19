@@ -1,13 +1,137 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* 1 */
+:root {
+  box-sizing: border-box;
+  --font-color: #333;
+  --background-color: #fff;
+  --link-color: cornflowerblue;
+  --primary-color: #185ee0;
+  --secondary-color: #e6eef9;
+  font-family: "Lato", sans-serif;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 2 */
+[data-theme="dark"] {
+  --font-color: #eee;
+  --background-color: #051139;
+  --link-color: lightblue;
+}
+
+/* 3 */
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  margin: 0;
+}
+
+a {
+  color: var(--link-color);
+}
+
+.recharts-wrapper .recharts-cartesian-grid-horizontal line:first-child {
+  stroke-opacity: 0;
+}
+
+.carouselController:hover {
+  color: white !important;
+}
+
+/* universal values */
+.mtp4 {
+  margin-top: 0.4em !important;
+}
+.mtp5 {
+  margin-top: 0.5em !important;
+}
+.mtp6 {
+  margin-top: 0.6em !important;
+}
+.mt1 {
+  margin-top: 1em !important;
+}
+.mt2 {
+  margin-top: 2em !important;
+}
+
+.mt3 {
+  margin-top: 3em !important;
+}
+
+.mt4 {
+  margin-top: 4em !important;
+}
+
+.mb1 {
+  margin-bottom: 1em !important;
+}
+.mb2 {
+  margin-bottom: 2em !important;
+}
+
+.mb3 {
+  margin-bottom: 3em !important;
+}
+
+.mb4 {
+  margin-bottom: 4em !important;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: auto;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flexEvenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* ============= */
+.fontOpen {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.fontLato {
+  font-family: "Lato", sans-serif !important;
+}
+
+.fontMont {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.fontPoppins {
+  font-family: "Poppins", sans-serif !important;
+}
+.activeClassName {
+  font-size: 0.875rem;
+  text-decoration: none;
+  font-weight: 400 !important;
+  color: #8392ab;
+  margin: 0 1rem;
+}
+.inactiveClassName {
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: #000;
+  margin: 0 1rem;
+  text-decoration: none;
 }
