@@ -42,6 +42,7 @@ import Starry_Vector_7 from "../assets/vector/Star7.png";
 import Starry_Vector_8 from "../assets/vector/Star8.png";
 import Mobile_Landing from "../assets/BGMobile.png";
 import Hamburger_Icon from "../assets/ham.png";
+import Footer_Logo from "../assets/logo_footer.png";
 
 export const ImageList = {
   IngenKartLogo: Logo,
@@ -97,5 +98,5 @@ export const ImageList = {
   Starry_Vector_7,
   Starry_Vector_8,
   Mobile_Landing,
-  Hamburger_Icon,
+  Hamburger_Icon,Footer_Logo
 };

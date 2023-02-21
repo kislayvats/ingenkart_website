@@ -32,3 +32,29 @@ export const NavOptions = [
     folderName: "FAQ",
   },
 ];
+
+export const ServicesOptions = [
+  {
+    title: "Email Marketing",
+    linkTo: "/email/marketing",
+  },
+  {
+    title: "Campaigns",
+    linkTo: "/campaigns",
+  },
+  {
+    title: "Branding",
+    linkTo: "/branding",
+  },
+];
+
+export const HelpOptions = [
+  {
+    title: "FAQs",
+    linkTo: "/faq",
+  },
+  {
+    title: "Contact Us",
+    linkTo: "/contact",
+  },
+];

@@ -31,10 +31,16 @@ export const SnackbarSeverity = {
 
 export const FontType = {
   openSans: "Open Sans",
+  dmSans: "DM Sans",
+  poppins: "Poppins",
+  lato: "Lato",
+  montserrat: "Montserrat",
 };
 
 export const Gradient = {
   primary: "linear-gradient(310deg, #5e72e4, #825ee4)",
+  primaryRadial:
+    "radial-gradient(186.72% 350.58% at -77.44% 50%, #FC84E2 0%, #FFDF34 100%)",
 };
 
 // user role

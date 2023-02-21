@@ -2,7 +2,7 @@ import React from "react";
 
 const GoogleForm = () => {
   return (
-
+   <div className="flexCenter" style={{width:"100%",minHeight:"120vh",overflow:"hidden"}}>
      <iframe
       src="https://docs.google.com/forms/d/e/1FAIpQLSds9whV9-HHn595Dy7T4R6_cd-Lfl9AaSxxWunfmQ6bmvnaFg/viewform?embedded=true"
       frameborder="0"
@@ -13,7 +13,7 @@ const GoogleForm = () => {
     >
       Loading…
     </iframe>
-
+   </div>
   );
 };
 

@@ -5,7 +5,7 @@ import GroupIcon from "@mui/icons-material/Group";
 import DoNotDisturbOnTotalSilenceIcon from "@mui/icons-material/DoNotDisturbOnTotalSilence";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import {
-  DoubleRightOutlined,
+  DoubleRightOutlined, 
   FieldTimeOutlined,
   InfoCircleOutlined,
   InstagramOutlined,

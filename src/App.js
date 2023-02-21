@@ -12,6 +12,7 @@ import PageNotFound from "./PageNotFound";
 import Aos from "aos";
 import Faq from "./pages/faq";
 import GoogleForm from "./pages/gForm/GoogleForm";
+import MyFooter from "./components/footer";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -49,6 +50,7 @@ const App = () => {
         <Route path="/register/influencer" element={<GoogleForm />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
+      <MyFooter />
     </ViewportProvider>
   );
 };
