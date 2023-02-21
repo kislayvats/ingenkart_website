@@ -6,7 +6,7 @@ export const HomeWrapper = styled.div`
   flex-direction: column;
   position: relative;
   top: 4.3rem;
-  min-height: 40vh;
+  min-height: 98vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,7 +43,7 @@ export const HomeWrapper = styled.div`
     outline: 3px solid ${Colors.white80};
     outline-offset: -2px;
     transform: scale(1.05);
-    transition: all 0.5s ease;
+    transition: outline 0.5s ease;
   }
   .download_text {
     font-weight: 300;

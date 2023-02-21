@@ -2,8 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { MobileWrapper } from "./Style";
 import { ImageList } from "../../../config/ImageList";
+import useViewport from "../../../viewport/useViewport";
 
 const MobileCard = () => {
+  const { height } = useViewport();
+
   const Variants = {
     offscreen: {
       y: 100,
@@ -27,8 +30,9 @@ const MobileCard = () => {
     },
   };
   return (
-    <MobileWrapper className="flexCenter mt2">
+    <MobileWrapper className="flexCenter mt2" height={height}>
       <motion.div
+      className="phoneImage"
         style={{ position: "relative", right: -78 }}
         whileHover={{ translateY: -6, scale: 1.043 }}
         variants={Variants}
@@ -37,12 +41,9 @@ const MobileCard = () => {
         viewport={{ once: true, amount: 0.8 }}>
         <img
           src={ImageList.Mobile_Left}
-          loading="lazy"
           alt="mobile layout"
-          style={{
-            width: "auto",
-            height: "auto",
-          }}
+          className="mobile_side"
+        
         />
       </motion.div>
       <motion.div
@@ -55,11 +56,7 @@ const MobileCard = () => {
         <img
           src={ImageList.Mobile_Center}
           alt="mobile layout"
-          loading="lazy"
-          style={{
-            width: "auto",
-            height: "auto",
-          }}
+        className="mobile_center"
         />
       </motion.div>{" "}
       <motion.div
@@ -72,11 +69,8 @@ const MobileCard = () => {
         <img
           src={ImageList.Mobile_Right}
           alt="mobile layout"
-          loading="lazy"
-          style={{
-            width: "auto",
-            height: "auto",
-          }}
+          className="mobile_side"
+        
         />
       </motion.div>
     </MobileWrapper>

@@ -8,6 +8,19 @@ export const MobileWrapper = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+  bottom: 0vh;
+  .phoneImage{
+
+  }
+  .mobile_side{
+width: auto;
+height: 21.425rem;
+  }
+  .mobile_center{
+    width: auto;
+height: 24.08rem;
+  }
 `;
 
 export const StarryWrapper = styled.div`

@@ -11,6 +11,7 @@ import InfluencerScreen from "./pages/influencers";
 import PageNotFound from "./PageNotFound";
 import Aos from "aos";
 import Faq from "./pages/faq";
+import GoogleForm from "./pages/gForm/GoogleForm";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -45,6 +46,7 @@ const App = () => {
         <Route path="/contact" element={<ContactScreen />} />
         <Route path="/influencer" element={<InfluencerScreen />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/register/influencer" element={<GoogleForm />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </ViewportProvider>
