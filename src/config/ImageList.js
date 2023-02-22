@@ -43,6 +43,9 @@ import Starry_Vector_8 from "../assets/vector/Star8.png";
 import Mobile_Landing from "../assets/BGMobile.png";
 import Hamburger_Icon from "../assets/ham.png";
 import Footer_Logo from "../assets/logo_footer.png";
+import FB_Icon from "../assets/fb_social_icon.png";
+import Twitter_Icon from "../assets/twitter_social_icon.png";
+import Instagram_Icon from "../assets/instagram_social_icon.png";
 
 export const ImageList = {
   IngenKartLogo: Logo,
@@ -98,5 +101,9 @@ export const ImageList = {
   Starry_Vector_7,
   Starry_Vector_8,
   Mobile_Landing,
-  Hamburger_Icon,Footer_Logo
+  Hamburger_Icon,
+  Footer_Logo,
+  FB_Icon,
+  Twitter_Icon,
+  Instagram_Icon,
 };

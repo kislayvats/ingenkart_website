@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
 /* 1 */
 :root {
@@ -64,6 +64,12 @@ a {
 .mt4 {
   margin-top: 4em !important;
 }
+.mt5 {
+  margin-top: 5em !important;
+}
+.mt6 {
+  margin-top: 6em !important;
+}
 
 .mb1 {
   margin-bottom: 1em !important;
@@ -79,7 +85,12 @@ a {
 .mb4 {
   margin-bottom: 4em !important;
 }
-
+.mb5 {
+  margin-bottom: 5em !important;
+}
+.mb6 {
+  margin-bottom: 6em !important;
+}
 .slick-track {
   display: flex !important;
 }
@@ -123,8 +134,8 @@ a {
 .fontPoppins {
   font-family: "Poppins", sans-serif !important;
 }
-.fontDm{
-  font-family: 'DM Sans', sans-serif !important;
+.fontDm {
+  font-family: "DM Sans", sans-serif !important;
 }
 .activeClassName {
   font-size: 0.875rem;

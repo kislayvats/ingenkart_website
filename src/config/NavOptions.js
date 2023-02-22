@@ -1,4 +1,5 @@
 import { Icons } from "./IconsList";
+import { ImageList } from "./ImageList";
 
 export const NavOptions = [
   {
@@ -56,5 +57,34 @@ export const HelpOptions = [
   {
     title: "Contact Us",
     linkTo: "/contact",
+  },
+];
+
+export const LegalOptions = [
+  {
+    title: "Terms & Conditions",
+    linkTo: "/terms",
+  },
+  {
+    title: "Privacy Policy",
+    linkTo: "/privacy",
+  },
+];
+
+export const SocialOptions = [
+  {
+    title: "Facebook",
+    linkTo: "https://www.facebook.com/",
+    icon: ImageList.FB_Icon,
+  },
+  {
+    title: "Twitter",
+    linkTo: "http://www.twitter.com/",
+    icon: ImageList.Twitter_Icon,
+  },
+  {
+    title: "Instagram",
+    linkTo: "http://www.instagram.com/ingenkart/",
+    icon: ImageList.Instagram_Icon,
   },
 ];

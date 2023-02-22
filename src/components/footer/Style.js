@@ -6,8 +6,9 @@ export const FooterWrapper = styled.div`
   max-width: 100%;
   min-height: 60vh;
   background-color: ${Colors.black};
+
   padding: ${(prop) =>
-    prop.isMobile ? "5rem 2rem 7rem 2rem" : "5rem 10rem 7rem 10rem"};
+    prop.isMobile ? "5rem 2rem 7rem 2rem" : "5rem 10rem 2rem 10rem"};
   .footer_logo {
     width: auto;
     height: 2.424rem;
@@ -89,5 +90,31 @@ export const FooterWrapper = styled.div`
     color: ${Colors.white};
     text-decoration: none;
     margin: 0.7rem 0;
+  }
+  .last_container {
+    flex-wrap: wrap;
+  }
+  .social_icon {
+    width: auto;
+    height: 1.24rem;
+  }
+  .option_container {
+    margin-top: 2rem;
+  }
+  .developed_by_box {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+    position: relative;
+    bottom: 0;
+  }
+  .developed_by_text {
+    font-weight: 400;
+    font-size: 0.87rem;
+  }
+  .bili_link {
+    text-decoration: none;
+    margin-left: 4px;
+    color: ${Colors.white};
+    font-weight: 400;
   }
 `;

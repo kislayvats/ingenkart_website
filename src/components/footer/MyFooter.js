@@ -9,12 +9,18 @@ import { SubscribeNewsletterSchema } from "../../config/Schema";
 import axios from "axios";
 import { Icons } from "../../config/IconsList";
 import { Colors } from "../../config/Colors";
-import { NavLink } from "react-router-dom";
-import { HelpOptions, ServicesOptions } from "../../config/NavOptions";
+import { NavLink, useNavigate } from "react-router-dom";
+import {
+  HelpOptions,
+  LegalOptions,
+  ServicesOptions,
+  SocialOptions,
+} from "../../config/NavOptions";
 
 const MyFooter = () => {
   const { isTablet, isMobile } = useViewport();
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
   // ===========================************==================================
   // ===========================useFormik=====================================
   // ===========================*************=================================
@@ -61,7 +67,11 @@ const MyFooter = () => {
           <Typography className="fontDm ready_heading">
             Ready to get started?
           </Typography>
-          <Button variant="contained" className="getStarted_button">
+          <Button
+            variant="contained"
+            className="getStarted_button"
+            onClick={() => navigate("/register/influencer", { replace: true })}
+          >
             Get Started
           </Button>
         </Col>
@@ -174,6 +184,58 @@ const MyFooter = () => {
           })}
         </Col>
       </Row>
+      {/* privacy term & condition social links */}
+      <div className="last_container flexBetween mt5">
+        <div className="option_container">
+          {LegalOptions?.map((item, i) => {
+            return (
+              <NavLink
+                key={i}
+                to={item.linkTo}
+                style={{ marginRight: 30 }}
+                className={({ isActive }) =>
+                  isActive
+                    ? "activeClassName fontDm"
+                    : "inactiveClassName fontDm"
+                }
+              >
+                {item.title}
+              </NavLink>
+            );
+          })}
+        </div>
+        <div className="option_container">
+          {SocialOptions?.map((item, i) => {
+            return (
+              <a
+                href={item.linkTo}
+                target="_blank"
+                rel="noreferrer"
+                key={i}
+                style={{ marginRight: 30 }}
+              >
+                <img src={item.icon} alt={item.title} className="social_icon" />
+              </a>
+            );
+          })}
+        </div>
+      </div>{" "}
+      {/* divider */}
+      {/* <div className="divider mt3 mb1" /> */}
+      {/* developed by bili */}
+      <div className="developed_by_box mt3">
+        <Typography variant="body1" className="developed_by_text fontLato">
+          Designed & Developed by{" "}
+          <a
+            href="https://biliweb.com"
+            target="_blank"
+            rel="noreferrer"
+            className="bili_link"
+          >
+            Bili
+          </a>
+        </Typography>
+      </div>
     </FooterWrapper>
   );
 };

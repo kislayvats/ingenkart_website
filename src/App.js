@@ -13,6 +13,7 @@ import Aos from "aos";
 import Faq from "./pages/faq";
 import GoogleForm from "./pages/gForm/GoogleForm";
 import MyFooter from "./components/footer";
+import ScrollTop from "./components/ScrollTop";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -38,6 +39,7 @@ const App = () => {
 
   return (
     <ViewportProvider>
+      <ScrollTop />
       <div className="flexCenter" style={{ width: "100%" }}>
         <Navbar />
       </div>
